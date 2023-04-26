@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.game-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.game-ui {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.clock,
+.mines-left {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    background-color: white;
+    padding: 10px;
+}
