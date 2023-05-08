@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Cell from "../Cell/Cell";
-import Buttons from "../../Buttons/Buttons";
+import GameOverPanel from "../GameOverPanel/GameOverPanel";
 import generateMinefield from "./GenerateMinefield";
 import "./Minefield.css"
 
@@ -146,8 +146,8 @@ const Minefield = ({ minefieldSize, numberOfMines }: Props) => {
         <div className="game-container">
             <div className="game-ui" onContextMenu={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) => e.preventDefault()}>
                 <div className="stats-container">
-                    <div className="clock">Time: {solveTime}</div>
-                    <div className="mines-left">Mines left: {nofMines}</div>
+                    <div className="clock"> ⏳ {solveTime} </div>
+                    <div className="mines-left"> {nofMines} 🚩 </div>
                 </div>
                 <div style={gridStyle} className="minefield" onClick={() => console.log(minefield)}>
                     {minefield.map(
@@ -168,7 +168,7 @@ const Minefield = ({ minefieldSize, numberOfMines }: Props) => {
                         })}
                 </div>
             </div>
-            <Buttons gameOver={gameOver} newMinefield={newMinefield} solveTime={solveTime} gameWon={gameWon} />
+            <GameOverPanel gameOver={gameOver} newMinefield={newMinefield} solveTime={solveTime} gameWon={gameWon} />
         </div>
     );
 }
