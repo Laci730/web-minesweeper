@@ -1,3 +1,10 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .difficulty-buttons-box {
     display: flex;
     flex-direction: column;
@@ -5,9 +12,8 @@
     align-items: center;
     width: 33dvw;
     height: 300px;
-    border: 1px solid black;
-    padding: 10px 0px;
-    background-color: lightblue;
+    padding: 50px 0px;
+    background-color: palegoldenrod;
 }
 
 .difficulty-button {
@@ -18,12 +24,12 @@
     padding: 0.2rem;
     background-color: white;
     border: 1px solid black;
-    color: black;
-    text-align: center;
     cursor: pointer;
     user-select: none;
 }
 
 .difficulty-button:hover {
-    background-color: lightyellow;
+    background-color: royalblue;
+    transition: 100ms linear;
+    color: palegoldenrod;
 }
