@@ -8,7 +8,7 @@ interface Props {
 function Difficulty({ setDifficulty }: Props) {
     return (
         <div className="difficulty-buttons-box">
-            Choose Difficulty
+            <h2 className="title">Minesweeper</h2>
             <div className="difficulty-button" onClick={() => setDifficulty("easy")}>Easy</div>
             <div className="difficulty-button" onClick={() => setDifficulty("medium")}>Medium</div>
             <div className="difficulty-button" onClick={() => setDifficulty("hard")}>Hard</div>
