@@ -21,8 +21,11 @@
 
 .clock,
 .mines-left {
+    display: grid;
+    place-content: center;
+    width: 64px;
     font-family: 'Nunito', sans-serif;
-    font-weight: 300;
-    background-color: white;
+    font-weight: bold;
+    background-color: palegoldenrod;
     padding: 10px;
 }
